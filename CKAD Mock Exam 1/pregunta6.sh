@@ -1,0 +1,2 @@
+kubectl config use-context cluster3
+kubectl patch deployment news-apd -n dev-001 --patch '{"spec": {"template": {"spec": {"containers": [{"name":"news-apd-container", "command": ["sh", "-c", "sleep 45000"]}]}}}}'

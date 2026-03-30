@@ -1,22 +1,3 @@
-# Pregunta 1
-kubectl config use-context cluster1
-kubectl apply -f pregunta1.yaml
-
-# Pregunta 2
-kubectl config use-context cluster1
-kubectl apply -f pregunta2.yaml
-
-# Pregunta 3
-kubectl config use-context cluster2
-kubectl apply -f pregunta3.yaml
-
-# Pregunta 4
-kubectl config use-context cluster3
-kubectl apply -f pregunta4.yaml
-
-# Pregunta 5
-kubectl config use-context cluster3
-kubectl apply -f pregunta5.yaml
 
 # Pregunta 6
 kubectl config use-context cluster3
