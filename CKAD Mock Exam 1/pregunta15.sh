@@ -1,0 +1,2 @@
+kubectl config use-context cluster1
+kubectl create configmap ckad04-config-multi-env-files-aecs -n default --from-env-file=/root/ckad04-multi-cm/file1.properties --from-env-file=/root/ckad04-multi-cm/file2.properties
