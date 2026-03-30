@@ -1,0 +1,1 @@
+kubectl exec -it webapp-svcn -- wget http://webapp-service-svcn:6379

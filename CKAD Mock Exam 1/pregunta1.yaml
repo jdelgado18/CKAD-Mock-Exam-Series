@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tres-containers-pod
+  namespace: ckad-multi-containers
+spec:
+  containers:
+  - name: primero
+    image: busybox:1.28
+    env:
+    - name: ORDER
+      value: FIRST
+    command: ["sh", "-c", "echo Hello from the first container! && sleep 7200"]
+  - name: segundo
+    image: nginx:1.17
+    ports:
+    - containerPort: 8080
+  - name: tercero
+    image: busybox:1.31.1
+    env:
+    - name: ORDER
+      value: THIRD
+    command: ["sh", "-c", "echo Hello from the third container! && sleep 7200"]

@@ -1,0 +1,1 @@
+kubectl exec -it pod22-ckad-svcn -- curl -s http://external-webserver-ckad01-svcn
