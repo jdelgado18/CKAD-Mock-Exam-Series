@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ckad-probe
+spec:
+  containers:
+  - name: ckad-probe
+    image: redis
+    livenessProbe:
+      exec:
+        command:
+        - 'ls'
+      initialDelaySeconds: 5

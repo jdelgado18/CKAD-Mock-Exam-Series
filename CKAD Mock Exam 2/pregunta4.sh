@@ -1,2 +1,2 @@
 kubectl config use-context cluster2
-kubectl apply -f pregunta18.yaml
+kubectl apply -f pregunta4.yaml

@@ -4,7 +4,7 @@ metadata:
   name: external-webserver-ckad01-svcn
 subsets:
   - addresses:
-      - ip: 10.244.247.47
+      - ip: 10.244.247.43
     ports:
       - port: 9999
         protocol: TCP
