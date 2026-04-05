@@ -1,4 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name:
+  name: ocean-apd
+  namespace: default
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ocean-apd
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 45%
+      maxSurge: 55%
+  template:
+    metadata:
+      labels:
+        app: ocean-apd
+    spec:
+      containers:
+      - name: ocean-apd
+        image: kodekloud/webapp-color:v1
